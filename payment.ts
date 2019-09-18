@@ -2,6 +2,7 @@ import { Item } from "./item";
 
 export interface Payment {
   id?: string;
+  status?: 'pending' | 'approved' | 'authorized' | 'in_process' | 'in_mediation' | 'rejected' | 'cancelled' | 'refunded' | 'charged_back';
   payer?: {
     entity_type?: "individual" | "association";
     type?: "customer" | "registered" | "guest";
