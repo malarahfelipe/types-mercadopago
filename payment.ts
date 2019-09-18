@@ -77,4 +77,15 @@ export interface Payment {
     };
     [k: string]: any;
   };
+  transaction_details?: {
+		net_received_amount?: number,
+		total_paid_amount?: number,
+		overpaid_amount?: number,
+		external_resource_url?: string,
+		installment_amount?: number,
+		financial_institution?: unknown,
+		payment_method_reference_id?: unknown,
+		payable_deferral_period?: unknown,
+		acquirer_reference?: unknown
+  }
 }
