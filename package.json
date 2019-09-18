@@ -1,6 +1,6 @@
 {
   "name": "types-mercado-pago",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Type definitions for mercado-pago api",
   "main": "index.js",
   "scripts": {
