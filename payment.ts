@@ -1,6 +1,7 @@
 import { Item } from "./item";
 
 export interface Payment {
+  id?: string;
   payer?: {
     entity_type?: "individual" | "association";
     type?: "customer" | "registered" | "guest";

@@ -1,8 +1,13 @@
 import { Item } from "./item";
+import { Payment } from "./payment";
 
 export interface MerchantOrder {
   preference_id?: string;
+  date_created?: string;
+  last_updated?: string;
   items?: Item[];
+  status?: 'opened' | 'closed';
+  payments?: Payment[];
   application_id?: string;
   site_id?: string;
   payer?: {
