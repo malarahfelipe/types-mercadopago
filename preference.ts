@@ -1,14 +1,7 @@
+import { Item } from "./item";
+
 export interface Preference {
-  items?: {
-    title?: string;
-    description?: string;
-    picture_url?: string;
-    category_id?: string;
-    quantity?: number;
-    currency_id?: string;
-    unit_price?: number;
-    [k: string]: any;
-  }[];
+  items?: Item[];
   payer?: {
     name?: string;
     surname?: string;

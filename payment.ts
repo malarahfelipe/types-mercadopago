@@ -1,3 +1,5 @@
+import { Item } from "./item";
+
 export interface Payment {
   payer?: {
     entity_type?: "individual" | "association";
@@ -46,16 +48,7 @@ export interface Payment {
   callback_url?: string;
   additional_info?: {
     ip_address?: string;
-    items?: {
-      id?: string;
-      title?: string;
-      description?: string;
-      picture_url?: string;
-      category_id?: string;
-      quantity?: number;
-      unit_price?: number;
-      [k: string]: any;
-    }[];
+    items?: Item[];
     payer?: {
       first_name?: string;
       last_name?: string;

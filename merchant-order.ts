@@ -1,3 +1,4 @@
+import { Item } from "./item";
 
 export interface MerchantOrder {
   preference_id?: string;
@@ -24,17 +25,7 @@ export interface MerchantOrder {
     picking_type?: string;
     status?: string;
     substatus?: string;
-    items?: {
-      id?: string;
-      category_id?: string;
-      currency_id?: string;
-      description?: string;
-      picture_url?: string;
-      quantity?: number;
-      unit_price?: number;
-      title?: string;
-      [k: string]: any;
-    }[];
+    items?: Item[];
     date_created?: string;
     last_modified?: string;
     date_first_printed?: string;
