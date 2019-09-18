@@ -1,6 +1,7 @@
 import { Item } from "./item";
 
 export interface Preference {
+  id?: string;
   items?: Item[];
   payer?: {
     name?: string;
