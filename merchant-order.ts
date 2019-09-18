@@ -2,6 +2,7 @@ import { Item } from "./item";
 
 export interface MerchantOrder {
   preference_id?: string;
+  items?: Item[];
   application_id?: string;
   site_id?: string;
   payer?: {
