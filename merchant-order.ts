@@ -4,6 +4,7 @@ import { Payment } from "./payment";
 export interface MerchantOrder {
   preference_id?: string;
   date_created?: string;
+  order_status: string;
   last_updated?: string;
   items?: Item[];
   status?: 'opened' | 'closed';

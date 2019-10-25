@@ -2,6 +2,7 @@ import { Item } from "./item";
 
 export interface Preference {
   id?: string;
+  binary_mode?: boolean;
   items?: Item[];
   payer?: {
     name?: string;
